@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1</title>
+</head>
+<style>
+    .preloader_main {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .preloader {
+        width: 100px;
+        height: 100px;
+        position: inherit;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+        background-color: black;
+        border-radius: 50%;
+        position: inherit;
+    }
+
+    .dot_1 {
+        -webkit-animation: dot-dot-dot-1 2s linear infinite;
+        animation: dot-dot-dot-1 2s linear infinite;
+        background-color: #1049a9;
+    }
+
+    .dot_2 {
+        -webkit-animation: dot-dot-dot-2 2s linear infinite;
+        animation: dot-dot-dot-2 2s linear infinite;
+        background-color: #ffd600;
+    }
+
+    .dot_3 {
+        -webkit-animation: dot-dot-dot-3 2s linear infinite;
+        animation: dot-dot-dot-3 2s linear infinite;
+        background-color: #ff5900;
+    }
+
+    @keyframes dot-dot-dot-1 {
+        0% {
+            transform: rotate(0deg) translateX(50px) rotate(0deg);
+            width: 50px;
+            height: 50px;
+        }
+        50% {
+            transform: rotate(180deg) translateX(50px) rotate(180deg);
+            width: 120px;
+            height: 120px;
+        }
+        100% {
+            transform: rotate(360deg) translateX(50px) rotate(360deg);
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    @keyframes dot-dot-dot-2 {
+        0% {
+            transform: rotate(120deg) translateX(50px) rotate(120deg);
+            width: 50px;
+            height: 50px;
+        }
+        50% {
+            transform: rotate(300deg) translateX(50px) rotate(300deg);
+            width: 120px;
+            height: 120px;
+        }
+        100% {
+            transform: rotate(480deg) translateX(50px) rotate(480deg);
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    @keyframes dot-dot-dot-3 {
+        0% {
+            transform: rotate(240deg) translateX(50px) rotate(240deg);
+            width: 50px;
+            height: 50px;
+        }
+        50% {
+            transform: rotate(420deg) translateX(50px) rotate(420deg);
+            width: 120px;
+            height: 120px;
+        }
+        100% {
+            transform: rotate(600deg) translateX(50px) rotate(600deg);
+            width: 50px;
+            height: 50px;
+        }
+    }
+</style>
+<body>
+
+<div class="preloader_main" id="preloader">
+    <div class="preloader">
+        <div class="dot dot_1"></div>
+        <div class="dot dot_2"></div>
+        <div class="dot dot_3"></div>
+    </div>
+</div>
+
+
+</body>
+</html>
